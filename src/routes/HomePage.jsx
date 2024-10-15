@@ -33,7 +33,7 @@ const HomePage = () => {
             </Canvas>
             <div className="text-container">
                 <h1 className="title">Enter my mind</h1>
-                <h2 className="subtitle">Wiebe Vandendriessche</h2>
+                <h2 className="subtitle">Wiebe Vandendriessche test</h2>
             </div>
             <button
                 onClick={handleEnterClick}
