@@ -15,7 +15,7 @@ const HomePage = () => {
     const handleEnterClick = () => {
         // Logic to navigate to the next part of the portfolio
         // For example, using React Router
-        navigate('/portfolio');  // Navigate to the portfolio page
+        navigate('/InsideMyMind/portfolio');  // Navigate to the portfolio page
     };
 
     const PATHS = data.economics[0].paths

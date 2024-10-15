@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePage from './routes/HomePage';
-import { HashRouter  as Router, Route, Routes } from 'react-router-dom';
+import Portfolio from './routes/Portfolio';
+import { BrowserRouter  as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -8,9 +9,10 @@ function App() {
     <Router>
       <Routes>
         {/* Home route with the brain animation */}
-        <Route path="/" element={<HomePage />} />
+        <Route path="/InsideMyMind" element={<HomePage />} />
 
         {/* Add other pages such as portfolio or skills */}
+        <Route path="/InsideMyMind/portfolio" element={<Portfolio />} />
 
 
         {/* Add more routes as needed */}
