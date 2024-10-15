@@ -1,10 +1,10 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
     branches:
       - main  # Change this to your default branch (e.g., 'main' or 'master')
-
+permissions:
+  contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -25,9 +25,7 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages  # The branch that GitHub Pages uses
         folder: dist      # The folder that contains the built files
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Automatically provided by GitHub
