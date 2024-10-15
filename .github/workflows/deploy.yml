@@ -25,7 +25,7 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
-      uses: JamesIArmes/github-pages-deploy-action@4.2.0
+      uses: peaceiris/actions-gh-pages@v3
       with:
         branch: gh-pages  # The branch that GitHub Pages uses
         folder: dist      # The folder that contains the built files
